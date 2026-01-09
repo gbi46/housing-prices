@@ -3,6 +3,8 @@ from sklearn.datasets import fetch_california_housing
 
 import pandas as pd
 
+init(autoreset=True)
+
 data = fetch_california_housing(as_frame=True)
 df = data.frame
 
