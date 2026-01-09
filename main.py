@@ -10,3 +10,11 @@ df = data.frame
 
 print(Back.GREEN + " === === Frame === ===")
 print(df)
+
+frame_head = df.head()
+frame_desc = df.describe()
+frame_corr = df.corr()["MedHouseVal"].sort_values()
+
+print(Back.BLUE + "   === == = EDA = == ===")
+print(Back.GREEN + " === === head === ===")
+print(frame_head)
