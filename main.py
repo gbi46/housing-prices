@@ -8,4 +8,5 @@ init(autoreset=True)
 data = fetch_california_housing(as_frame=True)
 df = data.frame
 
+print(Back.GREEN + " === === Frame === ===")
 print(df)
