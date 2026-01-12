@@ -3,7 +3,8 @@ from colorama import Back, Fore, init
 init(autoreset=True)
 
 class HeaderFormatter:
-    pass
+    def __init__(self, length: int = 1):
+        self.length = length
 
 def main_header(title):
     return Back.BLUE + "   === == = " + title + " = == ===   "
