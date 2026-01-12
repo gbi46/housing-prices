@@ -30,6 +30,13 @@ print(frame_corr)
 # simulate None
 df.iloc[::50, 0] = None
 df = df.dropna()
-print(Back.BLUE + "   === == = Clear data = == ===   ")
+
 print(Back.GREEN + " === === clear data === === ")
 print(df)
+
+X = df.drop("MedHouseVal", axis=1)
+y = df["MedHouseVal"]
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+model = LinearRegression()
+model.fit(X_train, y_train)
