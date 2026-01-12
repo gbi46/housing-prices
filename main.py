@@ -59,4 +59,7 @@ MAE = mean_absolute_error(y_test, preds)
 print(Back.GREEN + " === === = Mean Absolute Error = === === ")
 print(MAE)
 
-model.predict([X.mean()])
+X_mean_df = X.mean().to_frame().T
+model_pred = model.predict(X_mean_df)
+print(Back.GREEN + " === === = Prediction for average House = === === ")
+print(model_pred)
