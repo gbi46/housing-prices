@@ -2,6 +2,9 @@ from colorama import Back, Fore, init
 
 init(autoreset=True)
 
+class HeaderFormatter:
+    pass
+
 def main_header(title):
     return Back.BLUE + "   === == = " + title + " = == ===   "
 
