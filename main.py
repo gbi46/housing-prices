@@ -53,4 +53,8 @@ print(coef_df)
 preds = model.predict(X_test)
 print(Back.BLUE + "   === == = Applying model = == ===   ")
 print(Back.GREEN + " === === = Predictions = === === ")
+
 print(preds)
+MAE = mean_absolute_error(y_test, preds)
+print(Back.GREEN + " === === = Mean Absolute Error = === === ")
+print(MAE)
