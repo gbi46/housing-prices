@@ -21,3 +21,6 @@ print(frame_head)
 
 print(Back.GREEN + " === === describe === ")
 print(frame_desc)
+
+print(Back.GREEN + " === === correlation === === ")
+print(frame_corr)
