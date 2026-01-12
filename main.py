@@ -18,3 +18,6 @@ frame_corr = df.corr()["MedHouseVal"].sort_values()
 print(Back.BLUE + "   === == = EDA = == ===")
 print(Back.GREEN + " === === head === ===")
 print(frame_head)
+
+print(Back.GREEN + " === === describe === ")
+print(frame_desc)
