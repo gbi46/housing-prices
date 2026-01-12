@@ -40,3 +40,11 @@ y = df["MedHouseVal"]
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 model = LinearRegression()
 model.fit(X_train, y_train)
+
+coef_df = pd.DataFrame({
+    "feature": X.columns,
+    "coefficient": model.coef_
+})
+
+print(Back.GREEN + " === === = Model = === === ")
+print(coef_df)
