@@ -24,3 +24,10 @@ print(frame_desc)
 
 print(Back.GREEN + " === === correlation === === ")
 print(frame_corr)
+
+# simulate None
+df.iloc[::50, 0] = None
+df = df.dropna()
+print(Back.BLUE + "   === == = Clear data = == ===   ")
+print(Back.GREEN + " === === clear data === === ")
+print(df)
