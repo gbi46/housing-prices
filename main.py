@@ -49,3 +49,8 @@ coef_df = pd.DataFrame({
 
 print(Back.GREEN + " === === = Model = === === ")
 print(coef_df)
+
+preds = model.predict(X_test)
+print(Back.BLUE + "   === == = Applying model = == ===   ")
+print(Back.GREEN + " === === = Predictions = === === ")
+print(preds)
