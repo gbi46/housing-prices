@@ -6,6 +6,9 @@ class HeaderFormatter:
     def __init__(self, length: int = 1):
         self.length = length
 
+    def main_header(self, title: str) -> str:
+        return Back.BLUE + f"   === == = {title} = == ===   "
+
 def main_header(title):
     return Back.BLUE + "   === == = " + title + " = == ===   "
 
