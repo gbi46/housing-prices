@@ -10,7 +10,7 @@ class HeaderFormatter:
         return Back.BLUE + f"   === == = {title} = == ===   "
 
     def sub_header(self, title: str) -> str:
-        left_fill, right_fill = self._get_fill_blocks(self)
+        left_fill, right_fill = self._get_fill_blocks()
         return Back.GREEN + left_fill + title + right_fill
 
     def _get_fill_blocks(self) -> tuple[str, str]:

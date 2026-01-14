@@ -15,7 +15,7 @@ print(hf)
 data = fetch_california_housing(as_frame=True)
 df = data.frame
 
-print(hf.sub_header(hf, title="Frame"))
+print(hf.sub_header("Frame"))
 print(df)
 
 frame_head = df.head()
