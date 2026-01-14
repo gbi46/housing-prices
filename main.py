@@ -10,7 +10,6 @@ import pandas as pd
 init(autoreset=True)
 
 hf = HeaderFormatter()
-print(hf)
 
 data = fetch_california_housing(as_frame=True)
 df = data.frame
