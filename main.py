@@ -1,5 +1,5 @@
 from colorama import Back, Fore, init, Style
-from headers import HeaderFormatter, main_header, sub_header
+from headers import HeaderFormatter
 from sklearn.datasets import fetch_california_housing
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
@@ -9,7 +9,7 @@ import pandas as pd
 
 init(autoreset=True)
 
-hf = HeaderFormatter
+hf = HeaderFormatter()
 print(hf)
 
 data = fetch_california_housing(as_frame=True)
