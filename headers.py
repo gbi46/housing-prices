@@ -13,7 +13,7 @@ class HeaderFormatter:
         left_fill, right_fill = self._get_fill_blocks()
         return Back.GREEN + left_fill + title + right_fill
 
-    def _def_fill_blocks(self) -> tuple[str, str]:
+    def _get_fill_blocks(self) -> tuple[str, str]:
         match self.length:
             case 1:
                 return " === = ", " = === "
